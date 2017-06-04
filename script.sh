@@ -4,7 +4,7 @@ mkdir -p lol
 sudo ./atlassian-confluence-6.2.1-x64.bin < atl-comand
 echo "atlasian instaletion finish"
 echo "start installing nginx"
-cd nginx-ssl
+cd nginx
 sudo ./bootstrap.sh
 sudo service nginx restart
 echo "done"
@@ -16,7 +16,6 @@ sudo apt-get update
 sudo apt-get install -y postgresql postgresql-contrib
 
 sudo mkdir -p /var/atlassian/application-data/confluence/restore
-cp confluence.db.dump /var/atlassian/application-data/confluence/restore
 
 echo "done 2"
 
